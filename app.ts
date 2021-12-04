@@ -59,6 +59,11 @@ class Persona{
     }
 
      calcularIMC(altura:number, peso:number):string{
+        if(altura==0){
+
+            return 'Error la altura no puede ser cero.';  
+ 
+          }
         let pesoIdeal = (peso/(altura * altura));
         
         const peso_bajo:number = 0;
